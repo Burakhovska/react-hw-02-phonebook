@@ -3,7 +3,7 @@ import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Statistics } from "./Statistics/Statistics";
 import { Section } from "./Section/Section";
 
-class App extends Component {
+export default function App() {
   // state = {
   //   good: 0,
   //   neutral: 0,

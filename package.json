@@ -5,6 +5,7 @@
   "homepage": "https://burakhovska.github.io/react-hw-02-phonebook.git",
   "dependencies": {
     "cra-template": "1.2.0",
+    "nanoid": "^5.1.5",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

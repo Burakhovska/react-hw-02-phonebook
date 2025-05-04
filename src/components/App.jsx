@@ -1,29 +1,21 @@
 import { Component } from "react";
 import Phonebook from "./Phonebook/Phonebook";
 import { nanoid } from "nanoid";
-
+// import { number } from "prop-types";
 
 class App extends Component {
-  state = {
-    contacts: [],
-  };
-
   createUser = (data) => {
     const newUser = {
       ...data,
       id: nanoid(),
     };
-    console.log(newUser)
-    this.setState((prevState) => ({
-      contacts: [...prevState.contacts, newUser],
-    }));
+    return newUser;
   };
-  
 
   render() {
     return (
       <div className="container">
-        <Phonebook createUser={this.createUser} contacts={this.state.contacts}/>
+        <Phonebook createUser={this.createUser} />
       </div>
     );
   }

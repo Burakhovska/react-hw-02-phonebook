@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 import { Component } from "react";
 
-const ContactList = ({ contacts }) => (
+const ContactList = ({ contacts, handleDelete }) => (
     <ul>
       {contacts.map((contact) => (
         <li key={contact.id}>
           {contact.name}: {contact.number}
-          <button className="btn-delete">Delete</button>
+          <button type="button" onClick={() => handleDelete(contact.id)}>
+          Delete
+          </button>
         </li>
 
       ))}
